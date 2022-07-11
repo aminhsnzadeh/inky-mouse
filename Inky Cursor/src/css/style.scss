@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+h1 {
+    font-size: 3rem;
+    z-index: 99;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    animation: 0.24s ease forwards;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.ink {
+    animation: 0.24s ease forwards;
+    position: fixed;
+}
+@keyframes anime1 {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+}
+@keyframes anime2 {
+    from {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
